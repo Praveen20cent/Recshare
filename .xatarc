@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Praveen-s-workspace-9s1gnc.us-east-1.xata.sh/db/js_recshare",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
