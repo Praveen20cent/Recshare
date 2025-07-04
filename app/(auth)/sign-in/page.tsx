@@ -1,9 +1,14 @@
-'use client'
+'use client';
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { authClient } from '@/lib/auth-client'; // Adjust the import path as necessary
 
 const Page = () => {
+
+  const handleSignIn = async() => {
+    return await authClient.signIn.social({provider:'google'})
+  }
   // Typing effect state
   const [displayText, setDisplayText] = useState('');
   const fullText = "Welcome to RecShare";
@@ -185,7 +190,7 @@ const Page = () => {
             <h1>RecShare</h1>      
           </Link>
           <p>Create your first <span>video</span> in <span>RecShare</span></p>
-          <button>
+          <button onClick={handleSignIn}>
             <Image src="/assets/icons/google.svg" alt="google" width={22} height={22} />
             <span>Sign in with Google</span>
           </button>

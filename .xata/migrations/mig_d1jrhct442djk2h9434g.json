@@ -1,7 +1,7 @@
 {
   "done": true,
   "migration": {
-    "name": "mig_d17d5iqr9e9qaqkp660g",
+    "name": "mig_d1jrhct442djk2h9434g",
     "operations": [
       {
         "sql": {
@@ -11,7 +11,7 @@
     ]
   },
   "migrationType": "pgroll",
-  "name": "mig_d17d5iqr9e9qaqkp660g",
+  "name": "mig_d1jrhct442djk2h9434g",
   "schema": "public",
-  "startedAt": "2025-06-15T14:03:55.812157Z"
+  "startedAt": "2025-07-04T11:19:16.130444Z"
 }

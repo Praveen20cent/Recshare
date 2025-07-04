@@ -1,5 +1,5 @@
 {
-  "databaseURL": "https://Praveen-s-workspace-9s1gnc.us-east-1.xata.sh/db/js_recshare",
+  "databaseURL": "https://Praveen-s-workspace-9s1gnc.eu-central-1.xata.sh/db/recshare_video",
   "codegen": {
     "output": "src/xata.ts"
   }
