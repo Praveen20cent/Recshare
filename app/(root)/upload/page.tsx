@@ -16,6 +16,8 @@ const page = () => {
 
 
     const video ={};
+    const thumbnail={};
+
   const [error,setError]=useState( null );  
 
   const handleInputChange=(e: ChangeEvent)=>{
@@ -39,7 +41,7 @@ const page = () => {
 
         <FormField id="description" label="Description" placeholder="Describe what this video is about" value={formData.description} as="textarea" onChange={handleInputChange}/>
         <FormInput id="video" label="Video" accept="video/*" file={video.file} previewUrl={video.previewUrl} inputRef={video.inputRef} onchange={video.handeFileChange} onReset={video.resetFile} type="video"/>
-        <FormInput />
+        <FormInput id="thumbnail" label="Thumbnail" accept="image/*" file={thumbnail.file} previewUrl={thumbnail.previewUrl} inputRef={thumbnail.inputRef} onchange={thumbnail.handeFileChange} onReset={thumbnail.resetFile} type="image"/>
 
         <FormField id="visibility" label="Visibility" value={formData.visibility} as="select" options={[{value : 'public',label:'Public'},{value:'private',label:'Private'},]} onChange={handleInputChange}/>
         </div>
